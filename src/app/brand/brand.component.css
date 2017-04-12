@@ -1,0 +1,161 @@
+.brand-left {
+  float: left;
+  width: 345px;
+  height: 370px;
+  padding: 15px;
+  line-height: 2em;
+}
+.brand-right {
+  float: right;
+  width: 345px;
+  height: 370px;
+  padding: 100px 100px 0 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 20%;
+}
+.brand-right h3 {
+  color: white;
+}
+.brand-right .brand-url {
+  display: block;
+  padding: 5px;
+  color: black;
+}
+.brand-list-container {
+  margin: 0 auto;
+  width: 180px;
+  padding: 0;
+  background: black;
+}
+.brand-list {
+    position: relative;
+    width: 180px;
+    height: 370px;
+}
+.brand-list li {
+    width: 150px;
+    height: 70px;
+    margin: 15px;
+    padding: 5px;
+    background: #202020;
+}
+.brand-list li.active {
+  background: #707070;
+}
+.brand {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 2;
+  width: 236px;
+  height: 100%;
+  margin: 0 auto;
+  margin-left: -118px;
+  background: #58595b;
+  overflow: hidden;
+}
+
+.brand .brand-list {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  z-index: 2;
+  padding-left: 30px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 345px;
+  text-align: center;
+  overflow: hidden;
+}
+/**brand background display**/
+.brand-image-bg {
+  height: 90%;
+  width: 300px;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translateX(120px) translateY(-50%);
+  
+}
+.brand-list-container-bg-extend {
+  height: 100%;
+  width: 180px;
+  background: black;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-90px) translateY(-50%);
+}
+.line-left .item,
+.line-right .item {
+  position: absolute;
+  top: 50%;
+  width: 150%;
+  height: 1px;
+  max-height: 1px;
+  z-index: -2;
+  opacity: .2;
+  overflow: hidden;
+}
+
+.line-left .item-1,
+.line-right .item-1 {
+  left: -25%;
+  background: #cf372e;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+}
+
+.line-left .item-2, .line-left .item-3,
+.line-right .item-2,
+.line-right .item-3 {
+  background: #aaa;
+  -webkit-transform-origin: 30% center;
+          transform-origin: 30% center;
+}
+
+.line-left .item-2,
+.line-right .item-2 {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.line-left .item-3,
+.line-right .item-3 {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.line-left .item-2,
+.line-left .item-3 {
+  left: -25%;
+}
+
+.line-right .item-1 {
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+}
+
+.line-right .item-2,
+.line-right .item-3 {
+  right: -25%;
+  -webkit-transform-origin: 70% center;
+          transform-origin: 70% center;
+}
+/**auth list**/
+.auth-list {
+  position: relative;
+  padding: 0;
+  margin: 0 75px;
+  height: 226px;
+  width: 1000px;
+  white-space: nowrap;
+}
+.auth-list img {
+  display: inline-block;
+  height: 220px;
+  margin: 0 15px;
+}

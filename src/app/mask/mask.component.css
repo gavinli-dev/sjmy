@@ -1,0 +1,38 @@
+.mask-container {
+    position: absolute;
+    z-index: 8;
+    left: 0;
+}
+.top-mask {
+    top: 0;
+}
+.bottom-mask {
+    bottom: -5px;
+}
+.logo-container {
+    position: absolute;
+    z-index: 9;
+    width: 160px;
+    height: 77px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.logo-container .index-logo {
+    position: absolute;
+    width: 160px;
+    height: 77px;
+    top: 0;
+    left: 0;
+    background: url('/assets/img/index-logo.png') no-repeat;
+    background-size: 160px 77px;
+}
+.logo-container .logo {
+    position: absolute;
+    height: 89px;
+    width: 126px;
+    top: 0;
+    left: 57px;
+    background: url('../img/logo.png') no-repeat;
+    opacity: 0;
+}

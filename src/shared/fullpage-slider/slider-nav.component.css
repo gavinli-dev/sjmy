@@ -1,0 +1,67 @@
+ul {
+  position: fixed;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  width: 12px;
+  padding: 0 6px;
+}
+li {
+  padding: 0;
+  margin: 0 0 10px 0;
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+  position: relative;
+}
+li:before {
+  content: '';
+  display: block;
+  border-radius: 100px;
+  position: absolute;
+  background: #e04040;
+  opacity: 0.6;
+  width: 8px;
+  height: 8px;
+  top: 2px;
+  left: 2px;
+  transition: opacity 400ms ease,
+    height 600ms linear,
+    width 200ms ease,
+    top 600ms linear,
+    left 200ms ease;
+}
+li.active:before {
+  opacity: 1;
+  width: 12px;
+  height: 12px;
+  top: 0px;
+  left: 0px;
+  transition: opacity 400ms ease,
+    height 600ms linear,
+    width 200ms ease,
+    top 600ms linear,
+    left 200ms ease;
+}
+.page-name {
+  display: none;
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+  padding: 4px;
+  position: absolute;
+  top: -4px;
+  left: -4rem;
+  border-radius: 2px;
+  box-shadow: 2px 2px 2px 0.4 #303030;
+  background: #f0f0f0;
+  opacity: 0;
+  transition: opacity 400ms ease,
+    left 400ms ease;
+}
+li.active .page-name{
+  display: block;
+  opacity: 1;
+  left: -4.5rem;
+  transition: opacity 400ms ease,
+    left 400ms ease;
+}

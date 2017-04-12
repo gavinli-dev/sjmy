@@ -1,0 +1,423 @@
+.waz {
+  position: absolute;
+  height: 400px;
+  width: 1000px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-500px, -200px);
+  z-index: -1;
+}
+.waz canvas {
+  margin: 0 auto;
+}
+.event-bg {
+  margin: 0;
+  height: 36px;
+  border-top: 2px solid #e04040;
+  border-bottom: 2px solid #e04040;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+ul.event-list {
+  padding: 8px 0;
+  margin: 0 auto;
+  display: block;
+  height: 16px;
+  width: 1150px;
+}
+ul.event-list li {
+  float: left;
+  margin: 0 15px;
+  height: 16px;
+  line-height: 16px;
+  color: white;
+  list-style: none;
+  position: relative;
+  cursor: pointer;
+}
+ul.event-list li .event {
+  position: absolute;
+  width: 260px;
+  top: 0;
+  left: 0;
+  background: black;
+  font-size: 12px;
+  padding: 8px;
+  box-shadow: 2px 2px 0px 0px rgba(200,200,200,0.75);
+  border-radius: 2px;
+  opacity: 0;
+  transition: all 600ms linear;
+}
+ul.event-list li:nth-child(even) .event {
+  top: 30px;
+}
+ul.event-list li:nth-child(odd) .event {
+  top: -70px;
+}
+ul.event-list li:hover .event {
+  opacity: 1;
+  transition: all 600ms linear;
+}
+
+
+.slide-bg {
+  background-size: cover;
+  background-position: 50% 55%;
+  width: 100%;
+  height: 100vh;
+}
+.swiper-pagination {
+  bottom: 21vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.journey {
+  position: relative;
+  margin: 0 auto;
+  width: 1200px;
+  height: 340px;
+  padding-top: 210px;
+  text-align: center;
+}
+
+.journey ul {
+  display: inline-block;
+  width: auto;
+}
+
+.journey ul .item {
+  position: relative;
+  float: left;
+  margin: 0 32px;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+.journey ul .item:before, .journey ul .item:after {
+  display: block;
+  content: "";
+}
+
+.journey ul .item:before {
+  width: 21px;
+  height: 21px;
+  border-radius: 100%;
+  border: 3px solid transparent;
+  background: #cf372e;
+  background-clip: content-box;
+  cursor: pointer;
+}
+
+.journey ul .item:after {
+  position: absolute;
+  bottom: 15px;
+  left: 10px;
+  width: 1px;
+  height: 0;
+  background: #cf372e;
+  -webkit-transition: height .4s;
+  transition: height .4s;
+  -webkit-transition-delay: .3s;
+          transition-delay: .3s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+}
+
+.journey ul .item .outline {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  cursor: pointer;
+  width: 21px;
+  height: 21px;
+  overflow: hidden;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.journey ul .item .outline svg line {
+  stroke-width: 4;
+  stroke: #cf372e;
+  fill: none;
+  -webkit-transition: -webkit-transform .5s ease-out;
+  transition: -webkit-transform .5s ease-out;
+  transition: transform .5s ease-out;
+  transition: transform .5s ease-out, -webkit-transform .5s ease-out;
+}
+
+.journey ul .item .main {
+  width: 400px;
+  position: absolute;
+  left: -102px;
+  bottom: 185px;
+}
+
+.journey ul .item .main .year, .journey ul .item .main .intro {
+  position: absolute;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+  -webkit-transition-property: opacity, left;
+  transition-property: opacity, left;
+  opacity: 0;
+}
+
+.journey ul .item .main .year {
+  left: -112px;
+  margin-top: 5px;
+  width: 110px;
+  color: #221e1f;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+.journey ul .item .main .intro {
+  left: 220px;
+  width: 100%;
+  padding-left: 15px;
+  text-align: left;
+}
+
+.journey ul .item .main .intro:before {
+  display: block;
+  content: "";
+  width: 7px;
+  height: 42px;
+  position: absolute;
+  left: 0;
+  top: 8px;
+  background: #cf372e;
+}
+
+.journey ul .item .main .intro h3 {
+  margin: 7px 0 5px;
+  padding: 0;
+  font-size: 16px;
+  color: #221e1f;
+}
+
+.journey ul .item .main .intro p {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  color: #929496;
+  text-indent: 0;
+}
+
+.journey ul .item.active:after {
+  -webkit-transition: height .3s;
+  transition: height .3s;
+  height: 160px;
+}
+
+.journey ul .item.active .outline svg line {
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+.journey ul .item.active .outline svg line.top {
+  -webkit-transform: translateX(-21px);
+          transform: translateX(-21px);
+}
+
+.journey ul .item.active .outline svg line.bottom {
+  -webkit-transform: translateX(21px);
+          transform: translateX(21px);
+}
+
+.journey ul .item.active .outline svg line.left {
+  -webkit-transform: translateY(21px);
+          transform: translateY(21px);
+}
+
+.journey ul .item.active .outline svg line.right {
+  -webkit-transform: translateY(-21px);
+          transform: translateY(-21px);
+}
+
+.journey ul .item.active .main {
+  display: block;
+}
+
+.journey ul .item.active .main .year {
+  left: 15px;
+}
+
+.journey ul .item.active .main .intro {
+  left: 112px;
+}
+
+.journey ul .item.active .main .year, .journey ul .item.active .main .intro {
+  opacity: 1;
+  -webkit-transition-delay: .4s;
+          transition-delay: .4s;
+  -webkit-transition-duration: .4s;
+          transition-duration: .4s;
+  -webkit-transition-property: opacity, left;
+  transition-property: opacity, left;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+}
+
+.journey ul .item-level-1 {
+  margin-top: 0px;
+}
+
+.journey ul .item-level-2 {
+  margin-top: 30px;
+}
+
+.journey ul .item-level-3 {
+  margin-top: 60px;
+}
+
+.journey ul .item-level-4 {
+  margin-top: 90px;
+}
+
+.journey ul .item-level-5 {
+  margin-top: 120px;
+}
+
+.journey .line-box {
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  bottom: 0;
+  width: 1465px;
+  min-height: 10px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.journey .line-box .line-group {
+  width: 100%;
+}
+
+.journey .line-box .line-group .item-1, .journey .line-box .line-group .item-2, .journey .line-box .line-group .item-3, .journey .line-box .line-group .item-4, .journey .line-box .line-group .item-5 {
+  position: relative;
+  width: 100%;
+  height: 1px;
+  max-height: 1px;
+  margin-top: 29px;
+}
+
+.journey .line-box .line-group .item-1:before, .journey .line-box .line-group .item-1:after, .journey .line-box .line-group .item-2:before, .journey .line-box .line-group .item-2:after, .journey .line-box .line-group .item-3:before, .journey .line-box .line-group .item-3:after, .journey .line-box .line-group .item-4:before, .journey .line-box .line-group .item-4:after, .journey .line-box .line-group .item-5:before, .journey .line-box .line-group .item-5:after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background: #ccc;
+}
+
+.journey .line-box .line-group .item-1:before, .journey .line-box .line-group .item-2:before, .journey .line-box .line-group .item-3:before, .journey .line-box .line-group .item-4:before, .journey .line-box .line-group .item-5:before {
+  left: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.journey .line-box .line-group .item-1:after, .journey .line-box .line-group .item-2:after, .journey .line-box .line-group .item-3:after, .journey .line-box .line-group .item-4:after, .journey .line-box .line-group .item-5:after {
+  right: 0;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+}
+
+.journey .line-box .line-group .item-1 {
+  margin-top: 0;
+}
+
+.journey .line-box .line-group .item-1 {
+  background: #ccc;
+}
+
+.journey .line-box .line-group .item-2 {
+  background: #a8802d;
+}
+
+.journey .line-box .line-group .item-3 {
+  background: #c62165;
+}
+
+.journey .line-box .line-group .item-4 {
+  background: #2e3094;
+}
+
+.journey .line-box .line-group .item-5 {
+  background: #8579b8;
+}
+
+.journey .guidelines {
+  position: absolute;
+  z-index: 1;
+  width: 1465px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.journey .guidelines-top {
+  bottom: 185px;
+  height: 1px;
+}
+
+.journey .guidelines-top:before, .journey .guidelines-top:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 1px;
+  max-height: 1px;
+  overflow: hidden;
+  background: #bbbdc0;
+}
+
+.journey .guidelines-top:before {
+  left: 0;
+  -webkit-transform-origin: right center;
+          transform-origin: right center;
+  -webkit-transform: rotate(-2deg);
+          transform: rotate(-2deg);
+}
+
+.journey .guidelines-top:after {
+  right: 0;
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
+}
+
+.about-sjmy {
+  width: 815px;
+  margin: 55px auto 0;
+}
+
+.about-sjmy p {
+  line-height: 2;
+}

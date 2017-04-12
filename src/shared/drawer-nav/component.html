@@ -1,0 +1,11 @@
+<button class="navbar-toggle" type="button" [class.is-active]="isActive" (click)="toggleNav()">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+</button>
+<nav [class.expanded]="navbarExpanded" role="">
+    <div class="logo-box">
+        <div class="slidebar-logo"></div>
+    </div>
+    <ng-content></ng-content>
+</nav>

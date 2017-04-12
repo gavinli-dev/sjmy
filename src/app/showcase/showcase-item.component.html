@@ -1,0 +1,16 @@
+<div class="fullpage-mask">
+  <div class="mask-center-content white-boxed">
+    <div class="action-lane">
+      <a class="back-button" (click)="onBackToList()" routerLink="/showcase/{{showcase.groupId}}"></a>
+      <h1>{{showcase.title}}</h1>
+    </div>
+    <div class="gallery">
+      <div class="thumbs">
+        <img *ngFor="let thumbPath of thumbs" (click)="onThumbClick(thumbPath)" [src]="thumbPath" />
+      </div>
+      <div class="main">
+        <img [src]="mainImage" />
+      </div>
+    </div>
+  </div>
+</div>

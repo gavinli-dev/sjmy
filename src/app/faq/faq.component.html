@@ -1,0 +1,88 @@
+<fullpage-slider>
+    <slide-page class="light-bg">
+        <div class="slide-center-content white-boxed">
+            <h4>常见问题</h4>
+            <div class="faq-left-list">
+                <div #psFaq class="faq-list">
+                    <ul>
+                        <li *ngFor="let faq of faqList">
+                            <div class="question">{{faq.question}}</div>
+                            <div class="answer">{{faq.answer}}</div>
+                        </li> 
+                    </ul>
+                </div>
+            </div>
+            <div class="faq-right-bg"></div>
+        </div>
+    </slide-page>
+    <slide-page class="light-bg">
+        <div class="slide-center-content white-boxed">
+            <div class="location-list">
+                <h4>客户地图</h4>
+                <div #psLocation class='ps-location'>
+                    <ul>
+                        <li>九台别墅</li>
+                        <li>花山碧桂园别墅</li>
+                        <li>长岛别墅</li>
+                        <li>大华世家别墅</li>
+                        <li>江尚写字楼会所</li>
+                        <li>华侨城别墅</li>
+                        <li>远洋庄园别墅</li>
+                        <li>九台别墅</li>
+                        <li>花山碧桂园别墅</li>
+                        <li>长岛别墅</li>
+                        <li>大华世家别墅</li>
+                        <li>江尚写字楼会所</li>
+                        <li>华侨城别墅</li>
+                        <li>远洋庄园别墅</li>
+                        <li>九台别墅</li>
+                        <li>花山碧桂园别墅</li>
+                        <li>长岛别墅</li>
+                        <li>大华世家别墅</li>
+                        <li>江尚写字楼会所</li>
+                        <li>华侨城别墅</li>
+                        <li>远洋庄园别墅</li>
+                        <li>九台别墅</li>
+                        <li>花山碧桂园别墅</li>
+                        <li>长岛别墅</li>
+                        <li>大华世家别墅</li>
+                        <li>江尚写字楼会所</li>
+                        <li>华侨城别墅</li>
+                        <li>远洋庄园别墅</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="client-map"></div>
+        </div>
+    </slide-page>
+    <slide-page class="light-bg">
+        <div class="slide-center-content white-boxed">
+            <div class="contact-img"></div>
+            <div class="contact-address">
+                <h4>美音地址</h4>
+                <h5>影音会所</h5>
+                <p>
+                    绿地国际金融城蓝海B3-1307<br />
+                    武昌区和平大道750号（赵家敦）<br />
+                    预约电话：027-82834660<br />
+                    公司邮箱：992550620@qq.com<br />
+                </p>
+                <h5>体验中心</h5>
+                <p>
+                    绿地国际金融城蓝海B3-1311<br />
+                    武昌区和平大道750号（赵家敦）<br />
+                    预约电话：027-82781631<br />
+                    微信：sjmy1307<br />
+                </p>
+                <h5>交通指引</h5>
+                <p>
+                    地铁2号线积玉桥站D出口<br />
+                    搭乘公交至和平大道赵家敦车站<br />
+                    步行至绿地蓝郡B3座写字楼13楼<br />
+                </p>
+            </div>
+        </div>
+    </slide-page>
+
+    <slider-nav [pageNames]="['常见问题', '客户地图', '美音地址']"></slider-nav>
+</fullpage-slider>

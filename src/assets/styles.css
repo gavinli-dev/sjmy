@@ -1,0 +1,150 @@
+* {
+  font-family: "Microsoft Yahei";
+  text-decoration: none;
+  box-sizing: border-box;
+}
+html {
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+h3 {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 8px;
+  color: #555555;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  border-bottom: 3px solid #e04040;
+}
+h3.white {
+  color: #eeeeee;
+}
+h3.red {
+  color: #e04040;
+  border-left: 3px solid #e04040;
+}
+h4 {
+  margin: 8px 0;
+  padding: 0 8px;
+  color: #e04040;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  border-left: 3px solid #e04040;
+}
+h5 {
+  margin: 4px 0;
+  padding: 0 12px;
+  color: #222222;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1rem;
+}
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 12px 0;
+}
+br.clear {
+  clear: both;
+}
+/**fullpage-slider**/
+slide-page {
+  background-color: #2c2c2c;
+  overflow: hidden;
+}
+slide-page.light-bg {
+  background-color: #f0f0f0;
+}
+.slide-center-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 400px;
+  width: 1180px;
+  padding: 15px;
+  margin: 0;
+  transform: translateX(-590px) translateY(-200px);
+}
+.slide-center-content.center-align {
+  text-align: center;
+}
+.white-boxed {
+  background: white;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+/**fullpage-mask**/
+.fullpage-mask {
+  position: absolute;
+  z-index: 101;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(200,200,200,0.8);
+}
+.mask-center-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 640px;
+  width: 1060px;
+  padding: 20px;
+  margin: 0;
+  transform: translateX(-530px) translateY(-320px);
+}
+.action-lane {
+  height: 50px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #707070;
+  overflow: auto;
+}
+.action-lane h1 {
+  margin: 0;
+  padding: 0;
+  color: #555555;
+  font-size: 1.6rem;
+  line-height: 48px;
+  float: right;
+}
+.action-lane .back-button {
+    display: block;
+    width: 48px;
+    height: 48px;
+    float: left;
+    background: url('/assets/img/ic_keyboard_backspace_black_24px.svg') no-repeat 12px 12px;
+}
+.action-lane .back-button:hover {
+    background-color: #e0e0e0;
+}
+.swiper-pagination-bullet-active {
+  background: #e04040;
+}
+.ps-container > .ps-scrollbar-x-rail,
+.ps-container > .ps-scrollbar-y-rail {
+  opacity: 0.8;
+}
+.ps-container>.ps-scrollbar-x-rail>.ps-scrollbar-x,
+.ps-container>.ps-scrollbar-y-rail>.ps-scrollbar-y {
+  background-color: #e04040;
+}
+div.wavez canvas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -1;
+}

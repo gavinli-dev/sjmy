@@ -1,0 +1,48 @@
+<fullpage-slider>
+    <slide-page>
+        <div #bgSwiper class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide-bg" [style.background-image]="bg1"></div>
+                <div class="swiper-slide slide-bg" [style.background-image]="bg2"></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </slide-page>
+    <slide-page class="light-bg">
+        <div class="event-bg">
+            <ul class="event-list">
+                <li *ngFor="let event of eventList"><div class="time">{{event.year}}</div><div class="event">{{event.text}}</div></li>
+            </ul>
+        </div>
+        <div class="slide-center-content">
+            <h3>二十载，世纪美音伴您同行</h3>
+            <p>
+                世纪美音至创立伊始，致力于对品质生活的打造，经过多年的成长与沉淀，以世界一线品牌音响产品、国际认证的大师级服务团队、高质专业的服务理念傲然晋升为华中地区一流专业系统集成商，为追求更高品质生活的人群专属定制超凡脱俗的视、听新享受。
+            </p>
+        </div>
+        <div class="waz" #waz></div>
+    </slide-page>
+    <slide-page class="light-bg">
+        <div class="slide-center-content">
+            <h3>世纪美音 - 服务承诺</h3>
+            <p>
+                我们承诺所有销售的产品均为原厂正品，享受原厂品质保证和免费保修。
+            </p>
+            <p>
+                我们承诺所有产品在安装调试完毕后：
+                    及时对客户进行相关的使用培训，让客户熟练掌握正确的使用方法。
+                    根据国家三包法规定，对影音设备提供壹年的免费维修服务，其中音箱产品额外提供5年的免费维修服务。
+                    为客户提供终生免费上门调试服务，以便客户能更好的使用影音产品和服务。
+            </p>
+            <p>
+                本公司还承诺做到：
+                    客户故障报修后24小时内有专业技术人员上门检修调试，如果是客户使用和调试问题，必须当时就解决。如果确实是客户产品出现故障，也应配合客户及时送修，如客户有需求，公司还提供备用产品来保证客户正常使用。
+            </p>
+            <p>
+                对于意外情况（如电压不稳，外力损坏，水、火等不可抗拒因素）或超过免费保修后产生的产品故障，本公司应配合提供相关的维修服务，并只收取零部件成本费用！
+            </p>
+        </div>
+    </slide-page>
+    <slider-nav [pageNames]="['世纪美音', '美音历程', '服务承诺']"></slider-nav>
+</fullpage-slider>

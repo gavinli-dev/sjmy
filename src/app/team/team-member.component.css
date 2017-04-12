@@ -1,0 +1,10 @@
+.photo {
+    float: left;
+    width: 279px;
+    margin-right: 31px;
+}
+.biography {
+    float: left;
+    width: 580px;
+    line-height: 2em;
+}

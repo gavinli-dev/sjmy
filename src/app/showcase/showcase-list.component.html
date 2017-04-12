@@ -1,0 +1,23 @@
+<fullpage-slider>
+  <slide-page class="light-bg">
+    <div class="slide-center-content">
+      <div class="action-lane">
+        <a class="back-button" routerLink="/showcase"></a>
+        <h1>{{listTitle}}</h1>
+      </div>
+      <ul class="list">
+        <li *ngFor="let s of sl">
+          <a (click)="onItemClick(s.itemId)" routerLink="/showcase/item/{{s.itemId}}">
+            <img src="/assets/graphics/{{s.itemId}}/1.jpg" />
+            <div class="title">{{s.title}}</div>
+          </a>
+        </li>
+      </ul>
+      <ul class="pages">
+        <li *ngFor="let link of pageLinks; let p = index">
+          <a routerLinkActive="active" routerLink="{{link}}">{{p + 1}}</a>
+        </li>
+      </ul>
+    </div>
+  </slide-page>
+</fullpage-slider>

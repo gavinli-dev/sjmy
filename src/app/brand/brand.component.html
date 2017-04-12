@@ -1,0 +1,51 @@
+<fullpage-slider>
+    <slide-page class="stage-content">
+        <div class="slide-center-content">
+            <div class="brand-left white-boxed">
+                <h4>代理品牌</h4>
+                <p>
+                    影音播放系统主要包括三大部分组成,分别为音视频播放机、AV放大器、音箱系统。三者缺少了任何一部也不能称为家庭影院的播放系统。家庭影院播放系统的其中一个组成部分为音箱系统，也是播放系统中所占价格比例最大的一部分。
+                </p>
+            </div>
+            <div class="brand-right" [style.background-image]="'url(/assets/img/brand/' + selectedBrand.id + '.jpg)'">
+                <h3>{{selectedBrand.name}}</h3>
+                <a class="brand-url white-boxed" href="http://{{selectedBrand.url}}" target="_blanck">
+                    访问官网
+                </a>
+            </div>
+            <div class="brand-list-container">
+                <div #psBrand class="brand-list">
+                    <ul>
+                        <li *ngFor="let brandIndex of brandList" routerLinkActive="active">
+                            <a routerLink="/brand/{{brandIndex.id}}"><img src="/assets/img/brand/{{brandIndex.id}}.png" ></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="brand-list-container-bg-extend"></div>
+        <div class="line-left">
+            <div class="item item-1"></div>
+            <div class="item item-2"></div>
+            <div class="item item-3"></div>
+        </div>
+        <div class="line-right">
+            <div class="item item-1"></div>
+            <div class="item item-2"></div>
+            <div class="item item-3"></div>
+        </div>
+    </slide-page>
+    <slide-page class="light-bg">
+        <div class="slide-center-content center-align">
+            <h3>国际品牌代理证书</h3>
+            <p>
+                世纪美音经过20多年的行业发展，逐步成为许多国际一线影音电器产品的湖北总代理，任何一个单品，我们都是最先的试用和品鉴者，我们一直努力把真正的国际一些品牌传递给消费者！把最适合的产品分享给客户，高品质的产品带给用户极佳的优化体验，我们玩的是诚信和专注，所以收到用户和厂家的赞美！
+            </p>
+            <div #authList class="auth-list">
+                <img *ngFor="let idx of ['01', '02', '03', '04', '05', '06', '07', '08', '09']" src="/assets/img/brand/auth-{{idx}}_s.jpg" >
+            </div>
+        </div>
+    </slide-page>
+    <slider-nav [pageNames]="['代理品牌', '代理证书']"></slider-nav>
+</fullpage-slider>
